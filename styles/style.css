@@ -1,0 +1,161 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #2a254b;
+}
+
+.header {
+  padding: 24px 48px;
+}
+
+.header__logo {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.header__divider {
+  margin: 16px 0;
+  border: none;
+  border-top: 1px solid #ebe8f4;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #2a254b;
+  transition: color 0.3s ease;
+}
+
+.nav__link:hover {
+  color: #2c5530;
+}
+
+.nav__item {
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 80px 48px;
+  background: #f6f5ff;
+}
+
+.hero__title {
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+
+.hero__text {
+  color: #5b5676;
+}
+
+
+.features {
+  padding: 80px 48px;
+}
+
+.features__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.feature {
+  padding: 24px;
+  border: 1px solid #ebe8f4;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.products {
+  padding: 80px 48px;
+}
+
+.products__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.product-card {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card__price {
+  font-weight: 600;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 80px 48px;
+  background: #f6f5ff;
+}
+
+.footer {
+  padding: 48px;
+}
+
+.footer__form {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.footer__input {
+  padding: 12px;
+  border: 1px solid #ccc;
+}
+
+.footer__button {
+  padding: 12px 24px;
+  background: #2a254b;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.footer__button:hover {
+  background: #1e1a3a;
+}
