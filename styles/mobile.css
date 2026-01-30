@@ -1,0 +1,79 @@
+/* Планшеты и мобильные */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 44px;
+    height: 44px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .menu-toggle__line {
+    height: 3px;
+    background: #2a254b;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+
+  .menu-toggle.active .menu-toggle__line:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+
+  .menu-toggle.active .menu-toggle__line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.active .menu-toggle__line:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 260px;
+    height: 100vh;
+    background: white;
+    padding: 80px 24px;
+    transition: right 0.4s ease;
+    z-index: 1000;
+  }
+
+  .nav.active {
+    right: 0;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nav__link {
+    display: block;
+    padding: 16px 0;
+    font-size: 18px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .header {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1001;
+  }
+}
+
+/* Мелкие экраны */
+@media (max-width: 480px) {
+  body {
+    font-size: 17px;
+  }
+
+  .nav {
+    width: 100%;
+  }
+}

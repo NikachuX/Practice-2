@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avion</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
 </head>
 <body>
 
@@ -12,7 +13,16 @@
     <h1 class="header__logo">Avion</h1>
     <hr class="header__divider">
 
-    <nav class="header__nav nav">
+    <button class="menu-toggle" id="menuToggle"
+        aria-label="Открыть меню"
+        aria-expanded="false">
+    <span class="menu-toggle__line"></span>
+    <span class="menu-toggle__line"></span>
+    <span class="menu-toggle__line"></span>
+    </button>
+
+
+    <nav class="header__nav nav" id="mainNav">
         <ul class="nav__list">
             <li class="nav__item">
                 <a class="nav__link" href="#hero">Home</a>
@@ -164,5 +174,10 @@
     <p class="footer__copy">Copyright 2022 Avion LTD</p>
 </footer>
 
+<button class="scroll-top" id="scrollTop" aria-label="Наверх">
+    ↑
+</button>
+
+<script src="scripts/menu.js"></script>
 </body>
 </html>
